@@ -54,7 +54,7 @@ Based on the benchmark results, the following observations can be made:
 - For short strings with long prefixes, `HasPrefixFast` outperforms `HasPrefixStd`, showing noticeable performance improvements.
 - For short strings with short prefixes, `HasPrefixFast` and `HasPrefixStd` exhibit similar performance.
 
-These results highlight the optimized implementation of `HasPrefixFast` in the `stringx` package, particularly in scenarios involving long strings and short prefixes, which minimizes the use of `runtime.memequal` and reduces overhead, resulting in faster execution..
+These results highlight the optimized implementation of `HasPrefixFast` in the `stringx` package, particularly in scenarios involving long strings and short prefixes, which [minimizes](https://godbolt.org/z/1ce5dvq63) the use of `runtime.memequal` and reduces overhead, resulting in faster execution..
 
 
 ## License
